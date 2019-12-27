@@ -1,0 +1,24 @@
+name: release
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install tex stuff
+      run: sudo apt-get install -y texlive texlive-latex-extra texinfo
+    - name: Build the CV
+      run: texi2pdf cv.tex
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        title: "Latest CV"
+        files: |
+          cv.pdf

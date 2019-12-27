@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified by Tomasz Kurcz (uint@lavabit.com) for use as his own CV.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.78]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3.2cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Tomasz} % Your first name
+\familyname{Kurcz} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{}{Katowice, POLAND}
+%\mobile{+48 XXX XXX XXX}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{uint@lavabit.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+\homepage{github.com/uint/}{GitHub}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%% \clearpage
+
+%% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%% \date{\today} % Letter date
+%% \opening{Dear Sir or Madam,} % Opening greeting
+%% \closing{Sincerely yours,} % Closing phrase
+%% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%% \makelettertitle % Print letter title
+
+%% \lipsum[1-2] % Dummy text
+%% \lipsum[4] % Dummy text
+
+%% \makeletterclosing % Print letter signature
+
+%% \newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%       INTRO
+%----------------------------------------------------------------------------------------
+
+I enjoy Linux; I love Rust. Although boasting solid DevOps skills and experience with some of the fancier
+and buzzwordier things, I want to steer my career closer to good ol' software development.
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work history}
+
+\cventry{Mar 2019--now}{DevOps Engineer}{\textsc{Jamf}}{Katowice, Poland}{}{
+  This involves
+  \begin{itemize}
+    \item{automating routine tasks with custom tools (Python, Go),}
+    \item{maintaining internal infrastructure (mostly Kubernetes based),}
+    \item{a lot of troubleshooting, and}
+    \item{acting as an admin for some tools.}
+  \end{itemize}
+}
+
+\cventry{Aug 2017--Dec 2018}{QA/Software developer}{\textsc{TurtleWare}}{Przemyśl, Poland}{}{
+  This role mostly involved both manual and automated testing with a bit of software development in
+  Common Lisp. Since the team was small, I had the chance to also dabble in typical sysadmin work.
+}
+
+\cventry{Nov 2015--Aug 2017}{Freelance Translator}{\textsc{Gengo}}{remote}{}{General English-Polish translations.}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2014--2017}{B.A. in English Philology}{Państwowa Wyższa Szkoła Wschodnioeuropejska w Przemyślu}{Przemyśl, Poland}{}{}  % Arguments not required can be left empty
+
+\section{Certification}
+
+\cventry{2018}{ISTQB---Foundation Level}{}{}{}{No. 10708}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%% \section{Awards}
+
+%% \cvitem{2011}{School of Business Postgraduate Scholarship}
+%% \cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical stuff}
+
+\cvlistitem{Build and release, reliability eng, automation experience}
+\cvlistitem{Software development (\textbf{Rust}, \textbf{Go}, \textbf{Python}, \textbf{Common Lisp}...)}
+\cvlistitem{Version control (\textbf{git}, \textbf{GitHub}, \textbf{GitLab}, \textbf{BitBucket}...)}
+\cvlistitem{Containers and orchestration (\textbf{Docker}, \textbf{Kubernetes})}
+\cvlistitem{CI/CD (\textbf{Jenkins}, \textbf{CloudFormation}, \textbf{Bamboo}, \textbf{Spinnaker}, \textbf{GitHub Actions}...)}
+
+\section{Other}
+
+\cvlistitem{I prefer creative work over routine}
+\cvlistitem{Somewhat interested in mentoring, training, etc.}
+\cvlistitem{I do \textbf{not} partake in puns}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%% \section{Communication Skills}
+
+%% \cvitem{2010}{Oral Presentation at the California Business Conference}
+%% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Polish}{Mother tongue}{}
+\cvitemwithcomment{English}{Native-like fluency}{}
+\cvitemwithcomment{German}{Elementary, but looking to improve}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Personal interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistitem{Rust!}
+\cvlistitem{General geekery and geekishness}
+\cvlistitem{Staying fit}
+\cvlistitem{Multi User Dungeons}
+\cvlistitem{A good film}
+\cvlistitem{Live music (jazz fusion, funk, etc.)}
+
+%----------------------------------------------------------------------------------------
+
+\section{References}
+\cvitem{}{Available on request.}
+
+\vspace{\fill}
+
+I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
+
+\end{document}
